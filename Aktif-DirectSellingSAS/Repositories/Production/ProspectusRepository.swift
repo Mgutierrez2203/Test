@@ -38,19 +38,22 @@ class ProspectusRepository : IProspectusRepository {
     
     func getProspectsLists(_ token: String, completionHandler: @escaping ([ProspectusDTO]?, NSError?) -> Void) {
         
-        Alamofire.request(URLsOperationServices.getNoticias.description, method: HTTPMethod.get, encoding: JSONEncoding.default, headers:token).validate().responseJSON { (response:DataResponse<Any>) in
+        Alamofire.request(URLsOperationServices.getProspectus.description, method: HTTPMethod.get, encoding: JSONEncoding.default, headers:token).validate().responseJSON { (response:DataResponse<Any>) in
             switch(response.result) {
             case .success(let valueJson):
                 if let jsonDictionary = valueJson as? [NSDictionary] {
-                    let noticiasDTO = Mapper<NoticiaDTO>().mapArray(JSONObject: jsonDictionary)
-                    completionHandler(noticiasDTO, nil)
+                    let prospectsDTO = Mapper<ProspectusDTO>().mapArray(JSONObject: jsonDictionary)
+                    completionHandler(prospectsDTO, nil)
                 }
             case .failure(let error):
-                NSLog("Error NoticiasRepository.getNoticias\([error.localizedDescription])")
-                completionHandler(nil, self.getAlamofireError(error: error))
-                break
+                if (response.response != nil && response.response?.statusCode != 0) {
+                    let mensaje = NSError(domain: "error servicio", code: response.response!.statusCode, userInfo: [NSLocalizedDescriptionKey: "error servicio"])
+                    completionHandler(nil, mensaje)
+                } else {
+                    completionHandler(nil, alamoFireError as NSError)
+                }
             }
         }
     }
 }
-}
+

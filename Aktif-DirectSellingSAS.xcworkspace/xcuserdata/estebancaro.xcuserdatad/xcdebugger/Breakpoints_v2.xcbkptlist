@@ -78,8 +78,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
             endingLineNumber = "55"
-            landmarkName = "getProspectcListsOnLoad()"
-            landmarkType = "7">
+            landmarkName = "ProspectusViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
