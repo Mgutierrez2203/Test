@@ -36,7 +36,7 @@ public class RepositoryLocator {
     }
     
     init() {
-        use_test_repository = false
+       // use_test_repository = false
     }
     
     func securityRepository() -> ISecurityRepository {
@@ -46,4 +46,9 @@ public class RepositoryLocator {
             return SecurityRepository.sharedInstance
         //}
     }
+    
+    func prospectusRepository() -> IProspectusRepository {
+        return ProspectusRepository.sharedInstance
+    }
+    
 }

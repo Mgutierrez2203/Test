@@ -104,6 +104,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginViewContr
         print(message)
     }
     func goToDashBoard(_ token : String?) {
+        self.token = token!
         self.router.goToDashboard()
     }
     

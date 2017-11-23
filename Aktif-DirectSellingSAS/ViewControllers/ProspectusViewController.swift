@@ -18,7 +18,7 @@ protocol ProspectusViewControllerInput
 
 protocol ProspectusViewControllerOutput
 {
-    func getProspectcLists(token: String?)
+    func getProspectsLists(token: String?)
 }
 
 class ProspectusViewController: UIViewController, ProspectusViewControllerInput
@@ -30,7 +30,6 @@ class ProspectusViewController: UIViewController, ProspectusViewControllerInput
     var base: BaseViewController!
     
     // MARK: - Object lifecycle
-    
     override func awakeFromNib()
     {
         super.awakeFromNib()
@@ -50,8 +49,8 @@ class ProspectusViewController: UIViewController, ProspectusViewControllerInput
         
     }
     
-    func getProspectcListsOnLoad() {
-        self.output.getProspectcLists(token: self.token)
+    func getProspectsListsOnLoad() {
+        self.output.getProspectsLists(token: self.token)
     }
     
     // MARK: - Event handling

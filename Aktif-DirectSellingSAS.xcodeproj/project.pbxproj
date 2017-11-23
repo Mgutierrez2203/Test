@@ -28,6 +28,9 @@
 		5119B52E1FC4868E005195C2 /* LoginBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119B5271FC4868E005195C2 /* LoginBusinessLogic.swift */; };
 		5119B53A1FC4881A005195C2 /* DataFakes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119B5391FC4881A005195C2 /* DataFakes.swift */; };
 		5119B53E1FC48895005195C2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119B53D1FC48895005195C2 /* User.swift */; };
+		515EB7CA1FC685B7001E5999 /* IProspectusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515EB7C91FC685B7001E5999 /* IProspectusRepository.swift */; };
+		515EB7CC1FC685CD001E5999 /* ProspectusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515EB7CB1FC685CD001E5999 /* ProspectusRepository.swift */; };
+		515EB7CE1FC685F5001E5999 /* ProspectusRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515EB7CD1FC685F5001E5999 /* ProspectusRepositoryTest.swift */; };
 		51A77A441FC56CB20020E206 /* Enumerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A77A431FC56CB20020E206 /* Enumerators.swift */; };
 		51AF30EC1FC4998F00098B89 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51AF30EB1FC4998F00098B89 /* Default-568h@2x.png */; };
 		51AF30F11FC4ADFA00098B89 /* ISecurityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF30F01FC4ADFA00098B89 /* ISecurityRepository.swift */; };
@@ -79,6 +82,9 @@
 		5119B5271FC4868E005195C2 /* LoginBusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBusinessLogic.swift; sourceTree = "<group>"; };
 		5119B5391FC4881A005195C2 /* DataFakes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFakes.swift; sourceTree = "<group>"; };
 		5119B53D1FC48895005195C2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		515EB7C91FC685B7001E5999 /* IProspectusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IProspectusRepository.swift; sourceTree = "<group>"; };
+		515EB7CB1FC685CD001E5999 /* ProspectusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectusRepository.swift; sourceTree = "<group>"; };
+		515EB7CD1FC685F5001E5999 /* ProspectusRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectusRepositoryTest.swift; sourceTree = "<group>"; };
 		51A77A431FC56CB20020E206 /* Enumerators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerators.swift; sourceTree = "<group>"; };
 		51AF30EB1FC4998F00098B89 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		51AF30F01FC4ADFA00098B89 /* ISecurityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISecurityRepository.swift; sourceTree = "<group>"; };
@@ -152,10 +158,10 @@
 				5119B5481FC495E2005195C2 /* Models */,
 				5119B52F1FC48748005195C2 /* Presenters */,
 				5119B5331FC48767005195C2 /* Repositories */,
-				5119B5321FC48764005195C2 /* Resources */,
-				5119B5311FC48761005195C2 /* SupportingFiles */,
-				5119B54B1FC49768005195C2 /* Views */,
 				5119B5381FC487D7005195C2 /* ViewControllers */,
+				5119B54B1FC49768005195C2 /* Views */,
+				5119B5311FC48761005195C2 /* SupportingFiles */,
+				5119B5321FC48764005195C2 /* Resources */,
 			);
 			path = "Aktif-DirectSellingSAS";
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				51AF30FB1FC4BE4D00098B89 /* SecurityRepositoryTest.swift */,
+				515EB7CD1FC685F5001E5999 /* ProspectusRepositoryTest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -313,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				51AF30F41FC4B14000098B89 /* SecurityRepository.swift */,
+				515EB7CB1FC685CD001E5999 /* ProspectusRepository.swift */,
 			);
 			path = Production;
 			sourceTree = "<group>";
@@ -321,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				51AF30F01FC4ADFA00098B89 /* ISecurityRepository.swift */,
+				515EB7C91FC685B7001E5999 /* IProspectusRepository.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -553,6 +562,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				510724B71FC5D7A100406B1A /* ProspectusConfigurator.swift in Sources */,
+				515EB7CC1FC685CD001E5999 /* ProspectusRepository.swift in Sources */,
 				5119B52C1FC4868E005195C2 /* LoginConfigurator.swift in Sources */,
 				51AF30F11FC4ADFA00098B89 /* ISecurityRepository.swift in Sources */,
 				510724B61FC5D7A100406B1A /* ProspectusViewController.swift in Sources */,
@@ -563,9 +573,11 @@
 				51AF31091FC510F600098B89 /* BaseViewController.swift in Sources */,
 				510724B81FC5D7A100406B1A /* Prospectus.swift in Sources */,
 				5119B5281FC4868E005195C2 /* UserDTO.swift in Sources */,
+				515EB7CE1FC685F5001E5999 /* ProspectusRepositoryTest.swift in Sources */,
 				51A77A441FC56CB20020E206 /* Enumerators.swift in Sources */,
 				5119B52E1FC4868E005195C2 /* LoginBusinessLogic.swift in Sources */,
 				510724B51FC5D7A100406B1A /* ProspectusRouter.swift in Sources */,
+				515EB7CA1FC685B7001E5999 /* IProspectusRepository.swift in Sources */,
 				5119B52A1FC4868E005195C2 /* LoginRouter.swift in Sources */,
 				510724D01FC6597400406B1A /* ProspectusCell.swift in Sources */,
 				5119B5021FC4865D005195C2 /* AppDelegate.swift in Sources */,

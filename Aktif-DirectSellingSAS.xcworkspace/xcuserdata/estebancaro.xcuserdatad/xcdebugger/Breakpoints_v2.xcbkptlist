@@ -9,76 +9,59 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Aktif-DirectSellingSAS/ViewControllers/LoginViewController.swift"
-            timestampString = "533100198.040695"
+            filePath = "Aktif-DirectSellingSAS/ViewControllers/ProspectusViewController.swift"
+            timestampString = "533103262.993241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "goToDashBoard(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Aktif-DirectSellingSAS/ViewControllers/LoginViewController.swift"
-            timestampString = "533100198.04086"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "showMessage(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Aktif-DirectSellingSAS/Domain/BusinessLogic/LoginBusinessLogic.swift"
-            timestampString = "533100198.040966"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "loginUser(user:)"
-            landmarkType = "7">
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "ProspectusViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Aktif_DirectSellingSAS.LoginBusinessLogic.loginUser(user: Swift.Optional&lt;Aktif_DirectSellingSAS.User&gt;) -&gt; ()"
+                  symbolName = "Aktif_DirectSellingSAS.ProspectusViewController.token.getter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;"
                   moduleName = "Aktif-DirectSellingSAS"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/estebancaro/Desktop/Aktif-DirectSellingSAS/Aktif-DirectSellingSAS/Domain/BusinessLogic/LoginBusinessLogic.swift"
-                  timestampString = "533100198.418857"
+                  urlString = "file:///Users/estebancaro/Desktop/Aktif-DirectSellingSAS/Aktif-DirectSellingSAS/ViewControllers/ProspectusViewController.swift"
+                  timestampString = "533103263.226943"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "145">
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "96">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; () in Aktif_DirectSellingSAS.LoginBusinessLogic.loginUser(user: Swift.Optional&lt;Aktif_DirectSellingSAS.User&gt;) -&gt; ()"
+                  symbolName = "Aktif_DirectSellingSAS.ProspectusViewController.token.setter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;"
                   moduleName = "Aktif-DirectSellingSAS"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/estebancaro/Desktop/Aktif-DirectSellingSAS/Aktif-DirectSellingSAS/Domain/BusinessLogic/LoginBusinessLogic.swift"
-                  timestampString = "533100198.422113"
+                  urlString = "file:///Users/estebancaro/Desktop/Aktif-DirectSellingSAS/Aktif-DirectSellingSAS/ViewControllers/ProspectusViewController.swift"
+                  timestampString = "533103263.237055"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "39">
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "230">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Aktif_DirectSellingSAS.ProspectusViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;Aktif_DirectSellingSAS.ProspectusViewController&gt;"
+                  moduleName = "Aktif-DirectSellingSAS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/estebancaro/Desktop/Aktif-DirectSellingSAS/Aktif-DirectSellingSAS/ViewControllers/ProspectusViewController.swift"
+                  timestampString = "533103263.243903"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "81">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -89,13 +72,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Aktif-DirectSellingSAS/Repositories/Production/SecurityRepository.swift"
-            timestampString = "533100198.041571"
+            filePath = "Aktif-DirectSellingSAS/ViewControllers/ProspectusViewController.swift"
+            timestampString = "533103262.994252"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "loginUser(_:completionHandler:)"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "getProspectcListsOnLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -105,13 +88,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Aktif-DirectSellingSAS/Repositories/Production/SecurityRepository.swift"
-            timestampString = "533100198.041676"
+            filePath = "Aktif-DirectSellingSAS/ViewControllers/Routers/LoginRouter.swift"
+            timestampString = "533103262.994571"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "loginUser(_:completionHandler:)"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "passDataToProspectusScene(segue:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aktif-DirectSellingSAS/ViewControllers/Routers/LoginRouter.swift"
+            timestampString = "533103262.994842"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "passDataToProspectusScene(segue:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -122,7 +121,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Aktif-DirectSellingSAS/Domain/BusinessLogic/LoginBusinessLogic.swift"
-            timestampString = "533100198.041762"
+            timestampString = "533103262.994921"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
@@ -137,158 +136,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Aktif-DirectSellingSAS/ViewControllers/LoginViewController.swift"
-            timestampString = "533100198.042155"
+            filePath = "Aktif-DirectSellingSAS/Domain/BusinessLogic/LoginBusinessLogic.swift"
+            timestampString = "533103262.995362"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "textFieldDidEndEditing(_:)"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "loginUser(user:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Aktif-DirectSellingSAS/ViewControllers/LoginViewController.swift"
-            timestampString = "533100198.042235"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "textFieldDidBeginEditing(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Aktif-DirectSellingSAS/ViewControllers/LoginViewController.swift"
-            timestampString = "533100198.042308"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "validateUser(_:password:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Aktif-DirectSellingSAS/Repositories/Production/SecurityRepository.swift"
-            timestampString = "533100198.042387"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "loginUser(_:completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Aktif-DirectSellingSAS/Repositories/Production/SecurityRepository.swift"
-            timestampString = "533100198.042473"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "loginUser(_:completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Aktif-DirectSellingSAS/Helpers/MapperModel.swift"
-            timestampString = "533067998.375317"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "convertToUserDTO(user:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Aktif-DirectSellingSAS/Helpers/MapperModel.swift"
-            timestampString = "533067998.376032"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "convertToUserDTO(user:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Aktif-DirectSellingSAS/Repositories/Production/SecurityRepository.swift"
-            timestampString = "533100198.042648"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "loginUser(_:completionHandler:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Aktif_DirectSellingSAS.SecurityRepository.loginUser(Aktif_DirectSellingSAS.UserDTO, completionHandler: (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Aktif-DirectSellingSAS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/estebancaro/Desktop/Aktif-DirectSellingSAS/Aktif-DirectSellingSAS/Repositories/Production/SecurityRepository.swift"
-                  timestampString = "533100198.496987"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "785">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in Aktif_DirectSellingSAS.SecurityRepository.loginUser(Aktif_DirectSellingSAS.UserDTO, completionHandler: (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Aktif-DirectSellingSAS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/estebancaro/Desktop/Aktif-DirectSellingSAS/Aktif-DirectSellingSAS/Repositories/Production/SecurityRepository.swift"
-                  timestampString = "533100198.500529"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "25">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -298,12 +153,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Aktif-DirectSellingSAS/Presenters/LoginPresenter.swift"
-            timestampString = "533100198.04273"
+            timestampString = "533103262.995461"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
             landmarkName = "presentDashBoard(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Aktif-DirectSellingSAS/ViewControllers/LoginViewController.swift"
+            timestampString = "533103262.995818"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "goToDashBoard(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
