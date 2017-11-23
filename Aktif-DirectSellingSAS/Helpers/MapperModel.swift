@@ -18,11 +18,11 @@ class MapperModel {
     
     static func convertProspectusDTOToProspectus (prospectsDTO: Array<ProspectusDTO>) -> Array <Prospectus> {
         var prospects = Array<Prospectus>()
-        for prospectDTO in prospectDTO {
+        for prospectDTO in prospectsDTO {
             let prospectus = Prospectus.init(name: prospectDTO.name, lastName: prospectDTO.lastName, identification: prospectDTO.identification, phone: prospectDTO.phone, statusCode: prospectDTO.statusCode)
-            noticias.append(noticia)
+            prospects.append(prospectus)
         }
-        return noticias
+        return prospects
     }
 }
 

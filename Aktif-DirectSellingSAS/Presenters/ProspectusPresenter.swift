@@ -13,12 +13,14 @@ import UIKit
 
 protocol ProspectusPresenterInput
 {
-  
+    func presentProspectsList(prospects: [Prospectus])
+    func presentError(error: String)
 }
 
 protocol ProspectusPresenterOutput: class
 {
-  
+    func displayProspectsList(prospects: [Prospectus])
+    func displayError(error: String)
 }
 
 class ProspectusPresenter: ProspectusPresenterInput
@@ -26,5 +28,11 @@ class ProspectusPresenter: ProspectusPresenterInput
   weak var output: ProspectusPresenterOutput!
   
   // MARK: - Presentation logic
-  
+    func presentProspectsList(prospects: [Prospectus]) {
+        self.output.displayProspectsList(prospects: prospects)
+    }
+    
+    func presentError(error: String) {
+        self.output.displayError(error: error)
+    }
 }

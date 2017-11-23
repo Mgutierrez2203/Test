@@ -207,10 +207,10 @@
 		5119B5331FC48767005195C2 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				51AF30F21FC4AF9E00098B89 /* RepositoryLocator.swift */,
 				51AF30EF1FC4ADAE00098B89 /* Protocols */,
 				51AF30EE1FC4ADAC00098B89 /* Production */,
 				51AF30ED1FC4ADAA00098B89 /* Tests */,
-				51AF30F21FC4AF9E00098B89 /* RepositoryLocator.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";

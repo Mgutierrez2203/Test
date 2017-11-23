@@ -18,21 +18,23 @@ protocol ProspectusBusinessLogicInput
 
 protocol ProspectusBusinessLogicOutput
 {
-    
+    func presentProspectsList(prospects: [Prospectus])
+    func presentError(error: String)
 }
 
 class ProspectusBusinessLogic: ProspectusBusinessLogicInput
 {
     var output: ProspectusBusinessLogicOutput!
-    var repositoryLocator = RepositoryLocator().securityRepository()
+    var repositoryLocator = RepositoryLocator().prospectusRepository()
     
     func getProspectsLists(token: String?) {
         repositoryLocator.getProspectsLists(token!) { ( prospectsDTO, error) in
             if error == nil  {
                 let prospects = MapperModel.convertProspectusDTOToProspectus(prospectsDTO: prospectsDTO!)
-                // self.output.presentNoticias(noticias: noticias)
+                self.output.presentProspectsList(prospects: prospects)
             } else {
-                // self.output.presentError(error: error!)
+                let errorString = "error servicio"
+                self.output.presentError(error: errorString)
             }
         }
     }

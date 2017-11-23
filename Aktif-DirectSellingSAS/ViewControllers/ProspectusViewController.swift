@@ -13,7 +13,8 @@ import UIKit
 
 protocol ProspectusViewControllerInput
 {
-    
+    func displayProspectsList(prospects: [Prospectus])
+    func displayError(error: String)
 }
 
 protocol ProspectusViewControllerOutput
@@ -25,9 +26,13 @@ class ProspectusViewController: UIViewController, ProspectusViewControllerInput
 {
     // MARK: - Member variables
     var token: String!
+    var prospects: [Prospectus]?
     var output: ProspectusViewControllerOutput!
     var router: ProspectusRouter!
     var base: BaseViewController!
+    
+    // MARK: IBOutlet
+    @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Object lifecycle
     override func awakeFromNib()
@@ -41,18 +46,54 @@ class ProspectusViewController: UIViewController, ProspectusViewControllerInput
     }
     
     // MARK: - View lifecycle
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        getProspectcListsOnLoad()
-        
+        getProspectsListsOnLoad()
+        tableView.tableFooterView = UIView(frame: .zero)
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - Event handling
     func getProspectsListsOnLoad() {
         self.output.getProspectsLists(token: self.token)
     }
     
-    // MARK: - Event handling
+    // MARK: - Display logic
+    func displayProspectsList(prospects: [Prospectus]) {
+        self.prospects = prospects
+        self.tableView.reloadData()
+    }
     
+    func displayError(error: String) {
+        print(error)
+    }
 }
+
+extension ProspectusViewController:  UITableViewDataSource, UITableViewDelegate
+{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let prospects = self.prospects {
+            return prospects.count
+        } else {
+            return 0
+        }
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "prospectusCell") as! ProspectusCell
+        cell.prospectus = self.prospects?[indexPath.row]
+        cell.router = self.router
+        return cell
+    }
+  
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let height: CGFloat = 203
+        return height
+    }
+}
+

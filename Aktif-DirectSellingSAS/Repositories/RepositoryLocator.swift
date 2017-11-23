@@ -14,7 +14,7 @@ private let sharedInstance = RepositoryLocator()
 public class RepositoryLocator {
     
     static let sharedInstance = RepositoryLocator()
-    var use_test_repository: Bool
+    //var use_test_repository: Bool
     
     class var sharedDispatchInstance: RepositoryLocator {
         struct Static {
@@ -36,7 +36,7 @@ public class RepositoryLocator {
     }
     
     init() {
-       // use_test_repository = false
+       //use_test_repository = false
     }
     
     func securityRepository() -> ISecurityRepository {
