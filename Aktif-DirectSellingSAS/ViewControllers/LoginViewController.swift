@@ -108,14 +108,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginViewContr
         self.router.goToDashboard()
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-     
-    }
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
         case self.emailTextField:

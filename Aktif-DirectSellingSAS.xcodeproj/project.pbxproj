@@ -31,6 +31,9 @@
 		515EB7CA1FC685B7001E5999 /* IProspectusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515EB7C91FC685B7001E5999 /* IProspectusRepository.swift */; };
 		515EB7CC1FC685CD001E5999 /* ProspectusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515EB7CB1FC685CD001E5999 /* ProspectusRepository.swift */; };
 		515EB7CE1FC685F5001E5999 /* ProspectusRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515EB7CD1FC685F5001E5999 /* ProspectusRepositoryTest.swift */; };
+		5167BDD81FC7358B00247D61 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167BDD71FC7358B00247D61 /* EditViewController.swift */; };
+		5167BDDA1FC7450900247D61 /* EditRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167BDD91FC7450900247D61 /* EditRouter.swift */; };
+		5167BDDC1FC7456000247D61 /* EditConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167BDDB1FC7456000247D61 /* EditConfigurator.swift */; };
 		51A77A441FC56CB20020E206 /* Enumerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A77A431FC56CB20020E206 /* Enumerators.swift */; };
 		51AF30EC1FC4998F00098B89 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51AF30EB1FC4998F00098B89 /* Default-568h@2x.png */; };
 		51AF30F11FC4ADFA00098B89 /* ISecurityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF30F01FC4ADFA00098B89 /* ISecurityRepository.swift */; };
@@ -85,6 +88,9 @@
 		515EB7C91FC685B7001E5999 /* IProspectusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IProspectusRepository.swift; sourceTree = "<group>"; };
 		515EB7CB1FC685CD001E5999 /* ProspectusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectusRepository.swift; sourceTree = "<group>"; };
 		515EB7CD1FC685F5001E5999 /* ProspectusRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectusRepositoryTest.swift; sourceTree = "<group>"; };
+		5167BDD71FC7358B00247D61 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		5167BDD91FC7450900247D61 /* EditRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRouter.swift; sourceTree = "<group>"; };
+		5167BDDB1FC7456000247D61 /* EditConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditConfigurator.swift; sourceTree = "<group>"; };
 		51A77A431FC56CB20020E206 /* Enumerators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerators.swift; sourceTree = "<group>"; };
 		51AF30EB1FC4998F00098B89 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		51AF30F01FC4ADFA00098B89 /* ISecurityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISecurityRepository.swift; sourceTree = "<group>"; };
@@ -229,6 +235,7 @@
 			children = (
 				5119B5251FC4868E005195C2 /* LoginConfigurator.swift */,
 				510724B01FC5D7A100406B1A /* ProspectusConfigurator.swift */,
+				5167BDDB1FC7456000247D61 /* EditConfigurator.swift */,
 				5119B53B1FC48825005195C2 /* BusinessLogic */,
 				5119B5341FC48769005195C2 /* Model */,
 			);
@@ -257,6 +264,7 @@
 			children = (
 				5119B5241FC4868E005195C2 /* LoginViewController.swift */,
 				510724AF1FC5D7A100406B1A /* ProspectusViewController.swift */,
+				5167BDD71FC7358B00247D61 /* EditViewController.swift */,
 				5119B5491FC496CE005195C2 /* Controls */,
 				5119B54A1FC496DB005195C2 /* Routers */,
 			);
@@ -294,6 +302,7 @@
 			children = (
 				510724AE1FC5D7A100406B1A /* ProspectusRouter.swift */,
 				5119B5231FC4868E005195C2 /* LoginRouter.swift */,
+				5167BDD91FC7450900247D61 /* EditRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -571,6 +580,7 @@
 				5119B5291FC4868E005195C2 /* LoginPresenter.swift in Sources */,
 				5119B53A1FC4881A005195C2 /* DataFakes.swift in Sources */,
 				51AF31091FC510F600098B89 /* BaseViewController.swift in Sources */,
+				5167BDDC1FC7456000247D61 /* EditConfigurator.swift in Sources */,
 				510724B81FC5D7A100406B1A /* Prospectus.swift in Sources */,
 				5119B5281FC4868E005195C2 /* UserDTO.swift in Sources */,
 				515EB7CE1FC685F5001E5999 /* ProspectusRepositoryTest.swift in Sources */,
@@ -581,6 +591,7 @@
 				5119B52A1FC4868E005195C2 /* LoginRouter.swift in Sources */,
 				510724D01FC6597400406B1A /* ProspectusCell.swift in Sources */,
 				5119B5021FC4865D005195C2 /* AppDelegate.swift in Sources */,
+				5167BDD81FC7358B00247D61 /* EditViewController.swift in Sources */,
 				510724CE1FC633CE00406B1A /* MenuViewController.swift in Sources */,
 				510724B41FC5D7A100406B1A /* ProspectusPresenter.swift in Sources */,
 				51AF30F31FC4AF9E00098B89 /* RepositoryLocator.swift in Sources */,
@@ -589,6 +600,7 @@
 				51AF31071FC5066B00098B89 /* Constants.swift in Sources */,
 				5119B53E1FC48895005195C2 /* User.swift in Sources */,
 				51AF30F51FC4B14000098B89 /* SecurityRepository.swift in Sources */,
+				5167BDDA1FC7450900247D61 /* EditRouter.swift in Sources */,
 				510724B31FC5D7A100406B1A /* ProspectusDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

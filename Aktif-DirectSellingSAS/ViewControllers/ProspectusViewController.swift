@@ -49,8 +49,19 @@ class ProspectusViewController: UIViewController, ProspectusViewControllerInput
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        let exists: Bool = UserDefaults.standard.bool(forKey: "prospectsSaved")
+        if  exists{
+            displayProspectsList(prospects: UserDefaults.standard.object(forKey: "prospectsSaved") as! [Prospectus])
+            tableView.tableFooterView = UIView(frame: .zero)
+        }
         getProspectsListsOnLoad()
         tableView.tableFooterView = UIView(frame: .zero)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true);
+        navigationController?.navigationBar.isHidden = true
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -65,6 +76,12 @@ class ProspectusViewController: UIViewController, ProspectusViewControllerInput
     
     // MARK: - Display logic
     func displayProspectsList(prospects: [Prospectus]) {
+        /*
+        let exists: Bool = UserDefaults.standard.bool(forKey: "prospectsSaved")
+        if  !exists{
+            UserDefaults.standard.set(prospects, forKey: "prospectsSaved")
+        }
+ */
         self.prospects = prospects
         self.tableView.reloadData()
     }

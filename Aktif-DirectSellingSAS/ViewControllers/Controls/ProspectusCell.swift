@@ -20,9 +20,7 @@ class ProspectusCell: UITableViewCell {
     
     
     // MARK: - Member variables
-    
     var router: ProspectusRouter!
-    
     var prospectus: Prospectus?{
         didSet{
             updateUI()
@@ -41,6 +39,7 @@ class ProspectusCell: UITableViewCell {
     
     // link button to Edit
     @IBAction func editButton(_ sender: Any) {
+        self.router.goToEdit(prospectus: prospectus!)
     }
     
     override func awakeFromNib() {

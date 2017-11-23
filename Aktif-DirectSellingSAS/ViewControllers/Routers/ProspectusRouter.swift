@@ -13,36 +13,35 @@ import UIKit
 
 protocol ProspectusRouterInput
 {
-  func navigateToSomewhere()
+    func goToEdit(prospectus: Prospectus)
 }
 
 class ProspectusRouter: ProspectusRouterInput
 {
-  weak var viewController: ProspectusViewController!
-  
-  // MARK: - Navigation
-  
-  func navigateToSomewhere()
-  {
+    weak var viewController: ProspectusViewController!
+    var editViewController : EditViewController!
+    var prospectus: Prospectus?
     
-  }
-  
-  // MARK: - Communication
-  
-  func passDataToNextScene(segue: UIStoryboardSegue)
-  {
-    // NOTE: Teach the router which scenes it can communicate with
-    
-    if segue.identifier == "ShowSomewhereScene" {
-      passDataToSomewhereScene(segue: segue)
+    // MARK: - Navigation
+    func goToEdit(prospectus: Prospectus)
+    {
+        self.prospectus = prospectus
+        viewController.performSegue(withIdentifier: "segueToEdit", sender: nil)
     }
-  }
-  
-  func passDataToSomewhereScene(segue: UIStoryboardSegue)
-  {
-    // NOTE: Teach the router how to pass data to the next scene
     
-    // let someWhereViewController = segue.destinationViewController as! SomeWhereViewController
-    // someWhereViewController.output.name = viewController.output.name
-  }
+    // MARK: - Communication
+    func passDataToNextScene(segue: UIStoryboardSegue)
+    {
+        // NOTE: Teach the router which scenes it can communicate with
+        
+        if segue.identifier == "segueToEdit" {
+            passDataToSomewhereScene(segue: segue)
+        }
+    }
+    
+    func passDataToSomewhereScene(segue: UIStoryboardSegue)
+    {
+        self.editViewController = segue.destination as! EditViewController
+        self.editViewController.prospectus = self.prospectus!
+    }
 }
