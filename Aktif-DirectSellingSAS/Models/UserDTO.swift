@@ -19,10 +19,7 @@ class UserDTO : Mappable {
     var password: String?
     var token: String?
     
-    required init?(map: Map){
-        
-    }
-    
+    required init?(map: Map){}
     init(){}
     
     init(email: String!,password: String!, token: String!) {

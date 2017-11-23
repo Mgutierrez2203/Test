@@ -9,25 +9,36 @@
 //  clean architecture to your iOS and Mac projects, see http://clean-swift.com
 //
 
+import Foundation
 import ObjectMapper
 
 // NOTE: DTO Model
 
-class ProspectusDTODTO : Mappable {
-    var AtributeOne: Int?
-    var AtributeTwo: String?
-
-    required init?(map: Map){
-        
+class ProspectusDTO : Mappable {
+    var name: String?
+    var lastName: String?
+    var identification: String?
+    var phone: String?
+    var statusCode: Int?
+    
+    required init?(map: Map){}
+    init(){}
+    
+    init(name: String?, lastName: String?, identification: String?, phone: String?, statusCode: Int?) {
+        self.name = name
+        self.lastName = lastName
+        self.identification = identification
+        self.phone = phone
+        self.statusCode = statusCode
     }
     
-    init(){}
-
     func mapping(map: Map) {
-        AtributeOne <- map["atributeOne"]
-        AtributeTwo <- map["atributeTwo"]
+        name <- map["name"]
+        lastName <- map["surname"]
+        identification <- map["schProspectIdentification"]
+        phone <- map["telephone"]
+        statusCode <- map["statusCd"]
     }
-
 }
 
 

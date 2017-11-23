@@ -15,6 +15,7 @@
 		510724B81FC5D7A100406B1A /* Prospectus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510724B11FC5D7A100406B1A /* Prospectus.swift */; };
 		510724B91FC5D7A100406B1A /* ProspectusBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510724B21FC5D7A100406B1A /* ProspectusBusinessLogic.swift */; };
 		510724CE1FC633CE00406B1A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510724CD1FC633CE00406B1A /* MenuViewController.swift */; };
+		510724D01FC6597400406B1A /* ProspectusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510724CF1FC6597400406B1A /* ProspectusCell.swift */; };
 		5119B5021FC4865D005195C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119B5011FC4865D005195C2 /* AppDelegate.swift */; };
 		5119B5071FC4865D005195C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5119B5051FC4865D005195C2 /* Main.storyboard */; };
 		5119B5091FC4865D005195C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5119B5081FC4865D005195C2 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		510724B11FC5D7A100406B1A /* Prospectus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospectus.swift; sourceTree = "<group>"; };
 		510724B21FC5D7A100406B1A /* ProspectusBusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectusBusinessLogic.swift; sourceTree = "<group>"; };
 		510724CD1FC633CE00406B1A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		510724CF1FC6597400406B1A /* ProspectusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectusCell.swift; sourceTree = "<group>"; };
 		5119B4FE1FC4865D005195C2 /* Aktif-DirectSellingSAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aktif-DirectSellingSAS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5119B5011FC4865D005195C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5119B5061FC4865D005195C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 		5119B5491FC496CE005195C2 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				510724CF1FC6597400406B1A /* ProspectusCell.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				5119B52E1FC4868E005195C2 /* LoginBusinessLogic.swift in Sources */,
 				510724B51FC5D7A100406B1A /* ProspectusRouter.swift in Sources */,
 				5119B52A1FC4868E005195C2 /* LoginRouter.swift in Sources */,
+				510724D01FC6597400406B1A /* ProspectusCell.swift in Sources */,
 				5119B5021FC4865D005195C2 /* AppDelegate.swift in Sources */,
 				510724CE1FC633CE00406B1A /* MenuViewController.swift in Sources */,
 				510724B41FC5D7A100406B1A /* ProspectusPresenter.swift in Sources */,
