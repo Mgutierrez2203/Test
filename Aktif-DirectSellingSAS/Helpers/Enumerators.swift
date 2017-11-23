@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+enum URLsOperationServices : CustomStringConvertible {
+    case login, getProspectus, editProspectus
+    var description: String {
+        switch self {
+        case .login:
+            return "\(URL_BASE)application/login"
+        case .getProspectus:
+            return "\(URL_BASE)sch/prospects.json"
+        case .editProspectus:
+            return "\(URL_BASE)"
+        }
+    }
+}

@@ -7,12 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510724B31FC5D7A100406B1A /* ProspectusDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510724AC1FC5D7A100406B1A /* ProspectusDTO.swift */; };
+		510724B41FC5D7A100406B1A /* ProspectusPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510724AD1FC5D7A100406B1A /* ProspectusPresenter.swift */; };
+		510724B51FC5D7A100406B1A /* ProspectusRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510724AE1FC5D7A100406B1A /* ProspectusRouter.swift */; };
+		510724B61FC5D7A100406B1A /* ProspectusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510724AF1FC5D7A100406B1A /* ProspectusViewController.swift */; };
+		510724B71FC5D7A100406B1A /* ProspectusConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510724B01FC5D7A100406B1A /* ProspectusConfigurator.swift */; };
+		510724B81FC5D7A100406B1A /* Prospectus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510724B11FC5D7A100406B1A /* Prospectus.swift */; };
+		510724B91FC5D7A100406B1A /* ProspectusBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510724B21FC5D7A100406B1A /* ProspectusBusinessLogic.swift */; };
+		510724CE1FC633CE00406B1A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510724CD1FC633CE00406B1A /* MenuViewController.swift */; };
 		5119B5021FC4865D005195C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119B5011FC4865D005195C2 /* AppDelegate.swift */; };
-		5119B5041FC4865D005195C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119B5031FC4865D005195C2 /* ViewController.swift */; };
 		5119B5071FC4865D005195C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5119B5051FC4865D005195C2 /* Main.storyboard */; };
 		5119B5091FC4865D005195C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5119B5081FC4865D005195C2 /* Assets.xcassets */; };
 		5119B50C1FC4865D005195C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5119B50A1FC4865D005195C2 /* LaunchScreen.storyboard */; };
-		5119B5171FC4865D005195C2 /* Aktif_DirectSellingSASTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119B5161FC4865D005195C2 /* Aktif_DirectSellingSASTests.swift */; };
+		5119B5281FC4868E005195C2 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119B5211FC4868E005195C2 /* UserDTO.swift */; };
+		5119B5291FC4868E005195C2 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119B5221FC4868E005195C2 /* LoginPresenter.swift */; };
+		5119B52A1FC4868E005195C2 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119B5231FC4868E005195C2 /* LoginRouter.swift */; };
+		5119B52B1FC4868E005195C2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119B5241FC4868E005195C2 /* LoginViewController.swift */; };
+		5119B52C1FC4868E005195C2 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119B5251FC4868E005195C2 /* LoginConfigurator.swift */; };
+		5119B52E1FC4868E005195C2 /* LoginBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119B5271FC4868E005195C2 /* LoginBusinessLogic.swift */; };
+		5119B53A1FC4881A005195C2 /* DataFakes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119B5391FC4881A005195C2 /* DataFakes.swift */; };
+		5119B53E1FC48895005195C2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119B53D1FC48895005195C2 /* User.swift */; };
+		51A77A441FC56CB20020E206 /* Enumerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A77A431FC56CB20020E206 /* Enumerators.swift */; };
+		51AF30EC1FC4998F00098B89 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51AF30EB1FC4998F00098B89 /* Default-568h@2x.png */; };
+		51AF30F11FC4ADFA00098B89 /* ISecurityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF30F01FC4ADFA00098B89 /* ISecurityRepository.swift */; };
+		51AF30F31FC4AF9E00098B89 /* RepositoryLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF30F21FC4AF9E00098B89 /* RepositoryLocator.swift */; };
+		51AF30F51FC4B14000098B89 /* SecurityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF30F41FC4B14000098B89 /* SecurityRepository.swift */; };
+		51AF30FC1FC4BE4D00098B89 /* SecurityRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF30FB1FC4BE4D00098B89 /* SecurityRepositoryTest.swift */; };
+		51AF31071FC5066B00098B89 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF31061FC5066B00098B89 /* Constants.swift */; };
+		51AF31091FC510F600098B89 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF31081FC510F600098B89 /* BaseViewController.swift */; };
+		51AF31371FC54C9F00098B89 /* MapperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF31361FC54C9F00098B89 /* MapperModel.swift */; };
+		AC68535EE8BAB986C09B437F /* Pods_Aktif_DirectSellingSASTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F17F282EBA484F40497D83 /* Pods_Aktif_DirectSellingSASTests.framework */; };
+		E9924A97276395EEA464143A /* Pods_Aktif_DirectSellingSAS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F6B9302BB7AC1ABF90E813 /* Pods_Aktif_DirectSellingSAS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +51,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		272E83F64CDD26920D2FA17D /* Pods-Aktif-DirectSellingSAS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aktif-DirectSellingSAS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aktif-DirectSellingSAS/Pods-Aktif-DirectSellingSAS.release.xcconfig"; sourceTree = "<group>"; };
+		2D390C0F8FC761E1E5890B17 /* Pods-Aktif-DirectSellingSASTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aktif-DirectSellingSASTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aktif-DirectSellingSASTests/Pods-Aktif-DirectSellingSASTests.release.xcconfig"; sourceTree = "<group>"; };
+		510724AC1FC5D7A100406B1A /* ProspectusDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectusDTO.swift; sourceTree = "<group>"; };
+		510724AD1FC5D7A100406B1A /* ProspectusPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectusPresenter.swift; sourceTree = "<group>"; };
+		510724AE1FC5D7A100406B1A /* ProspectusRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectusRouter.swift; sourceTree = "<group>"; };
+		510724AF1FC5D7A100406B1A /* ProspectusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectusViewController.swift; sourceTree = "<group>"; };
+		510724B01FC5D7A100406B1A /* ProspectusConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectusConfigurator.swift; sourceTree = "<group>"; };
+		510724B11FC5D7A100406B1A /* Prospectus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospectus.swift; sourceTree = "<group>"; };
+		510724B21FC5D7A100406B1A /* ProspectusBusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectusBusinessLogic.swift; sourceTree = "<group>"; };
+		510724CD1FC633CE00406B1A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		5119B4FE1FC4865D005195C2 /* Aktif-DirectSellingSAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aktif-DirectSellingSAS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5119B5011FC4865D005195C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5119B5031FC4865D005195C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5119B5061FC4865D005195C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5119B5081FC4865D005195C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5119B50B1FC4865D005195C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5119B50D1FC4865D005195C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5119B5121FC4865D005195C2 /* Aktif-DirectSellingSASTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aktif-DirectSellingSASTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5119B5161FC4865D005195C2 /* Aktif_DirectSellingSASTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aktif_DirectSellingSASTests.swift; sourceTree = "<group>"; };
 		5119B5181FC4865D005195C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5119B5211FC4868E005195C2 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		5119B5221FC4868E005195C2 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		5119B5231FC4868E005195C2 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		5119B5241FC4868E005195C2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5119B5251FC4868E005195C2 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		5119B5271FC4868E005195C2 /* LoginBusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBusinessLogic.swift; sourceTree = "<group>"; };
+		5119B5391FC4881A005195C2 /* DataFakes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFakes.swift; sourceTree = "<group>"; };
+		5119B53D1FC48895005195C2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		51A77A431FC56CB20020E206 /* Enumerators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerators.swift; sourceTree = "<group>"; };
+		51AF30EB1FC4998F00098B89 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		51AF30F01FC4ADFA00098B89 /* ISecurityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISecurityRepository.swift; sourceTree = "<group>"; };
+		51AF30F21FC4AF9E00098B89 /* RepositoryLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryLocator.swift; sourceTree = "<group>"; };
+		51AF30F41FC4B14000098B89 /* SecurityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityRepository.swift; sourceTree = "<group>"; };
+		51AF30FB1FC4BE4D00098B89 /* SecurityRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityRepositoryTest.swift; sourceTree = "<group>"; };
+		51AF31061FC5066B00098B89 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		51AF31081FC510F600098B89 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		51AF31361FC54C9F00098B89 /* MapperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperModel.swift; sourceTree = "<group>"; };
+		76F17F282EBA484F40497D83 /* Pods_Aktif_DirectSellingSASTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aktif_DirectSellingSASTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F6B9302BB7AC1ABF90E813 /* Pods_Aktif_DirectSellingSAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aktif_DirectSellingSAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96AD75DA4A689630649C10E /* Pods-Aktif-DirectSellingSASTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aktif-DirectSellingSASTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aktif-DirectSellingSASTests/Pods-Aktif-DirectSellingSASTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD925B2A0F481219B5F73532 /* Pods-Aktif-DirectSellingSAS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aktif-DirectSellingSAS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aktif-DirectSellingSAS/Pods-Aktif-DirectSellingSAS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9924A97276395EEA464143A /* Pods_Aktif_DirectSellingSAS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +105,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC68535EE8BAB986C09B437F /* Pods_Aktif_DirectSellingSASTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		210AD2EDE1ADE800A9062D1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94F6B9302BB7AC1ABF90E813 /* Pods_Aktif_DirectSellingSAS.framework */,
+				76F17F282EBA484F40497D83 /* Pods_Aktif_DirectSellingSASTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5119B4F51FC4865D005195C2 = {
 			isa = PBXGroup;
 			children = (
 				5119B5001FC4865D005195C2 /* Aktif-DirectSellingSAS */,
 				5119B5151FC4865D005195C2 /* Aktif-DirectSellingSASTests */,
 				5119B4FF1FC4865D005195C2 /* Products */,
+				D7FA841CD483401A5208F661 /* Pods */,
+				210AD2EDE1ADE800A9062D1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +144,16 @@
 		5119B5001FC4865D005195C2 /* Aktif-DirectSellingSAS */ = {
 			isa = PBXGroup;
 			children = (
-				5119B5011FC4865D005195C2 /* AppDelegate.swift */,
-				5119B5031FC4865D005195C2 /* ViewController.swift */,
-				5119B5051FC4865D005195C2 /* Main.storyboard */,
-				5119B5081FC4865D005195C2 /* Assets.xcassets */,
-				5119B50A1FC4865D005195C2 /* LaunchScreen.storyboard */,
-				5119B50D1FC4865D005195C2 /* Info.plist */,
+				5119B5371FC48772005195C2 /* Data */,
+				5119B5361FC4876F005195C2 /* Helpers */,
+				5119B5351FC4876C005195C2 /* Domain */,
+				5119B5481FC495E2005195C2 /* Models */,
+				5119B52F1FC48748005195C2 /* Presenters */,
+				5119B5331FC48767005195C2 /* Repositories */,
+				5119B5321FC48764005195C2 /* Resources */,
+				5119B5311FC48761005195C2 /* SupportingFiles */,
+				5119B54B1FC49768005195C2 /* Views */,
+				5119B5381FC487D7005195C2 /* ViewControllers */,
 			);
 			path = "Aktif-DirectSellingSAS";
 			sourceTree = "<group>";
@@ -90,10 +161,176 @@
 		5119B5151FC4865D005195C2 /* Aktif-DirectSellingSASTests */ = {
 			isa = PBXGroup;
 			children = (
-				5119B5161FC4865D005195C2 /* Aktif_DirectSellingSASTests.swift */,
 				5119B5181FC4865D005195C2 /* Info.plist */,
 			);
 			path = "Aktif-DirectSellingSASTests";
+			sourceTree = "<group>";
+		};
+		5119B52F1FC48748005195C2 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				5119B5221FC4868E005195C2 /* LoginPresenter.swift */,
+				510724AD1FC5D7A100406B1A /* ProspectusPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		5119B5311FC48761005195C2 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5119B5011FC4865D005195C2 /* AppDelegate.swift */,
+				51AF31081FC510F600098B89 /* BaseViewController.swift */,
+				51AF31061FC5066B00098B89 /* Constants.swift */,
+				5119B50D1FC4865D005195C2 /* Info.plist */,
+				51AF30EB1FC4998F00098B89 /* Default-568h@2x.png */,
+				5119B5081FC4865D005195C2 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		5119B5321FC48764005195C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				510724CD1FC633CE00406B1A /* MenuViewController.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5119B5331FC48767005195C2 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				51AF30EF1FC4ADAE00098B89 /* Protocols */,
+				51AF30EE1FC4ADAC00098B89 /* Production */,
+				51AF30ED1FC4ADAA00098B89 /* Tests */,
+				51AF30F21FC4AF9E00098B89 /* RepositoryLocator.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		5119B5341FC48769005195C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5119B53D1FC48895005195C2 /* User.swift */,
+				510724B11FC5D7A100406B1A /* Prospectus.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5119B5351FC4876C005195C2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5119B5251FC4868E005195C2 /* LoginConfigurator.swift */,
+				510724B01FC5D7A100406B1A /* ProspectusConfigurator.swift */,
+				5119B53B1FC48825005195C2 /* BusinessLogic */,
+				5119B5341FC48769005195C2 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5119B5361FC4876F005195C2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				51AF31361FC54C9F00098B89 /* MapperModel.swift */,
+				51A77A431FC56CB20020E206 /* Enumerators.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5119B5371FC48772005195C2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5119B5391FC4881A005195C2 /* DataFakes.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5119B5381FC487D7005195C2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5119B5241FC4868E005195C2 /* LoginViewController.swift */,
+				510724AF1FC5D7A100406B1A /* ProspectusViewController.swift */,
+				5119B5491FC496CE005195C2 /* Controls */,
+				5119B54A1FC496DB005195C2 /* Routers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5119B53B1FC48825005195C2 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				5119B5271FC4868E005195C2 /* LoginBusinessLogic.swift */,
+				510724B21FC5D7A100406B1A /* ProspectusBusinessLogic.swift */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		5119B5481FC495E2005195C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5119B5211FC4868E005195C2 /* UserDTO.swift */,
+				510724AC1FC5D7A100406B1A /* ProspectusDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5119B5491FC496CE005195C2 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		5119B54A1FC496DB005195C2 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				510724AE1FC5D7A100406B1A /* ProspectusRouter.swift */,
+				5119B5231FC4868E005195C2 /* LoginRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		5119B54B1FC49768005195C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5119B5051FC4865D005195C2 /* Main.storyboard */,
+				5119B50A1FC4865D005195C2 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		51AF30ED1FC4ADAA00098B89 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				51AF30FB1FC4BE4D00098B89 /* SecurityRepositoryTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		51AF30EE1FC4ADAC00098B89 /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				51AF30F41FC4B14000098B89 /* SecurityRepository.swift */,
+			);
+			path = Production;
+			sourceTree = "<group>";
+		};
+		51AF30EF1FC4ADAE00098B89 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				51AF30F01FC4ADFA00098B89 /* ISecurityRepository.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D7FA841CD483401A5208F661 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD925B2A0F481219B5F73532 /* Pods-Aktif-DirectSellingSAS.debug.xcconfig */,
+				272E83F64CDD26920D2FA17D /* Pods-Aktif-DirectSellingSAS.release.xcconfig */,
+				E96AD75DA4A689630649C10E /* Pods-Aktif-DirectSellingSASTests.debug.xcconfig */,
+				2D390C0F8FC761E1E5890B17 /* Pods-Aktif-DirectSellingSASTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +340,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5119B51B1FC4865D005195C2 /* Build configuration list for PBXNativeTarget "Aktif-DirectSellingSAS" */;
 			buildPhases = (
+				46EB82C7207E49EDD7C0BE71 /* [CP] Check Pods Manifest.lock */,
 				5119B4FA1FC4865D005195C2 /* Sources */,
 				5119B4FB1FC4865D005195C2 /* Frameworks */,
 				5119B4FC1FC4865D005195C2 /* Resources */,
+				36D30974AA34B39739C6B269 /* [CP] Embed Pods Frameworks */,
+				0D5214963411B847B3560FF3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +360,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5119B51E1FC4865D005195C2 /* Build configuration list for PBXNativeTarget "Aktif-DirectSellingSASTests" */;
 			buildPhases = (
+				547ADF46BC281D7FBCFF4F6A /* [CP] Check Pods Manifest.lock */,
 				5119B50E1FC4865D005195C2 /* Sources */,
 				5119B50F1FC4865D005195C2 /* Frameworks */,
 				5119B5101FC4865D005195C2 /* Resources */,
+				8574A2DCE2E1EA24A3A381B0 /* [CP] Embed Pods Frameworks */,
+				FE02B2524CC2A45D5305F593 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5119B50C1FC4865D005195C2 /* LaunchScreen.storyboard in Resources */,
+				51AF30EC1FC4998F00098B89 /* Default-568h@2x.png in Resources */,
 				5119B5091FC4865D005195C2 /* Assets.xcassets in Resources */,
 				5119B5071FC4865D005195C2 /* Main.storyboard in Resources */,
 			);
@@ -194,13 +438,142 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D5214963411B847B3560FF3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aktif-DirectSellingSAS/Pods-Aktif-DirectSellingSAS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36D30974AA34B39739C6B269 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Aktif-DirectSellingSAS/Pods-Aktif-DirectSellingSAS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aktif-DirectSellingSAS/Pods-Aktif-DirectSellingSAS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46EB82C7207E49EDD7C0BE71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aktif-DirectSellingSAS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		547ADF46BC281D7FBCFF4F6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aktif-DirectSellingSASTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8574A2DCE2E1EA24A3A381B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aktif-DirectSellingSASTests/Pods-Aktif-DirectSellingSASTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE02B2524CC2A45D5305F593 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aktif-DirectSellingSASTests/Pods-Aktif-DirectSellingSASTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5119B4FA1FC4865D005195C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5119B5041FC4865D005195C2 /* ViewController.swift in Sources */,
+				510724B71FC5D7A100406B1A /* ProspectusConfigurator.swift in Sources */,
+				5119B52C1FC4868E005195C2 /* LoginConfigurator.swift in Sources */,
+				51AF30F11FC4ADFA00098B89 /* ISecurityRepository.swift in Sources */,
+				510724B61FC5D7A100406B1A /* ProspectusViewController.swift in Sources */,
+				51AF31371FC54C9F00098B89 /* MapperModel.swift in Sources */,
+				5119B52B1FC4868E005195C2 /* LoginViewController.swift in Sources */,
+				5119B5291FC4868E005195C2 /* LoginPresenter.swift in Sources */,
+				5119B53A1FC4881A005195C2 /* DataFakes.swift in Sources */,
+				51AF31091FC510F600098B89 /* BaseViewController.swift in Sources */,
+				510724B81FC5D7A100406B1A /* Prospectus.swift in Sources */,
+				5119B5281FC4868E005195C2 /* UserDTO.swift in Sources */,
+				51A77A441FC56CB20020E206 /* Enumerators.swift in Sources */,
+				5119B52E1FC4868E005195C2 /* LoginBusinessLogic.swift in Sources */,
+				510724B51FC5D7A100406B1A /* ProspectusRouter.swift in Sources */,
+				5119B52A1FC4868E005195C2 /* LoginRouter.swift in Sources */,
 				5119B5021FC4865D005195C2 /* AppDelegate.swift in Sources */,
+				510724CE1FC633CE00406B1A /* MenuViewController.swift in Sources */,
+				510724B41FC5D7A100406B1A /* ProspectusPresenter.swift in Sources */,
+				51AF30F31FC4AF9E00098B89 /* RepositoryLocator.swift in Sources */,
+				510724B91FC5D7A100406B1A /* ProspectusBusinessLogic.swift in Sources */,
+				51AF30FC1FC4BE4D00098B89 /* SecurityRepositoryTest.swift in Sources */,
+				51AF31071FC5066B00098B89 /* Constants.swift in Sources */,
+				5119B53E1FC48895005195C2 /* User.swift in Sources */,
+				51AF30F51FC4B14000098B89 /* SecurityRepository.swift in Sources */,
+				510724B31FC5D7A100406B1A /* ProspectusDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +581,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5119B5171FC4865D005195C2 /* Aktif_DirectSellingSASTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,11 +723,12 @@
 		};
 		5119B51C1FC4865D005195C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD925B2A0F481219B5F73532 /* Pods-Aktif-DirectSellingSAS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 572FTWFZ44;
-				INFOPLIST_FILE = "Aktif-DirectSellingSAS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Aktif-DirectSellingSAS/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Aktif-DirectSellingSAS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,11 +739,12 @@
 		};
 		5119B51D1FC4865D005195C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 272E83F64CDD26920D2FA17D /* Pods-Aktif-DirectSellingSAS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 572FTWFZ44;
-				INFOPLIST_FILE = "Aktif-DirectSellingSAS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Aktif-DirectSellingSAS/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Aktif-DirectSellingSAS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,6 +755,7 @@
 		};
 		5119B51F1FC4865D005195C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E96AD75DA4A689630649C10E /* Pods-Aktif-DirectSellingSASTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,6 +773,7 @@
 		};
 		5119B5201FC4865D005195C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D390C0F8FC761E1E5890B17 /* Pods-Aktif-DirectSellingSASTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -13,7 +13,7 @@ import UIKit
 
 // MARK: - Connect View, BusinessLogic, and Presenter
 
-extension ProspectusConfiguratorViewController: ProspectusConfiguratorPresenterOutput
+extension ProspectusViewController: ProspectusPresenterOutput
 {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?)
   {
@@ -21,33 +21,33 @@ extension ProspectusConfiguratorViewController: ProspectusConfiguratorPresenterO
   }
 }
 
-extension ProspectusConfiguratorBusinessLogic: ProspectusConfiguratorViewControllerOutput
+extension ProspectusBusinessLogic: ProspectusViewControllerOutput
 {
 }
 
-extension ProspectusConfiguratorPresenter: ProspectusConfiguratorBusinessLogicOutput
+extension ProspectusPresenter: ProspectusBusinessLogicOutput
 {
 }
 
-class ProspectusConfiguratorConfigurator
+class ProspectusConfigurator
 {
   // MARK: - Object lifecycle
   
-  static let sharedInstance = ProspectusConfiguratorConfigurator()
+  static let sharedInstance = ProspectusConfigurator()
   
   private init() {}
   
   // MARK: - Configuration
   
-  func configure(viewController: ProspectusConfiguratorViewController)
+  func configure(viewController: ProspectusViewController)
   {
-    let router = ProspectusConfiguratorRouter()
+    let router = ProspectusRouter()
     router.viewController = viewController
     
-    let presenter = ProspectusConfiguratorPresenter()
+    let presenter = ProspectusPresenter()
     presenter.output = viewController
     
-    let interactor = ProspectusConfiguratorBusinessLogic()
+    let interactor = ProspectusBusinessLogic()
     interactor.output = presenter
     
     viewController.output = interactor

@@ -11,27 +11,20 @@
 
 import UIKit
 
-protocol ProspectusPresenterPresenterInput
+protocol ProspectusPresenterInput
 {
-  func presentSomething(response: ProspectusPresenter)
+  
 }
 
-protocol ProspectusPresenterPresenterOutput: class
+protocol ProspectusPresenterOutput: class
 {
-  func displaySomething(viewModel: ProspectusPresenter)
+  
 }
 
-class ProspectusPresenterPresenter: ProspectusPresenterPresenterInput
+class ProspectusPresenter: ProspectusPresenterInput
 {
-  weak var output: ProspectusPresenterPresenterOutput!
+  weak var output: ProspectusPresenterOutput!
   
   // MARK: - Presentation logic
   
-  func presentSomething(response: ProspectusPresenter)
-  {
-    // NOTE: Format the response from the Interactor and pass the result back to the View Controller
-    
-    let viewModel = ProspectusPresenter()
-    output.displaySomething(viewModel: viewModel)
-  }
 }

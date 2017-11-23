@@ -11,35 +11,21 @@
 
 import UIKit
 
-protocol ProspectusBusinessLogicBusinessLogicInput
+protocol ProspectusBusinessLogicInput
 {
-  func doSomething(request: ProspectusBusinessLogic)
+   
 }
 
-protocol ProspectusBusinessLogicBusinessLogicOutput
+protocol ProspectusBusinessLogicOutput
 {
-  func presentSomething(response: ProspectusBusinessLogic)
+  
 }
 
-class ProspectusBusinessLogicBusinessLogic: ProspectusBusinessLogicBusinessLogicInput
+class ProspectusBusinessLogic: ProspectusBusinessLogicInput
 {
-  var output: ProspectusBusinessLogicBusinessLogicOutput!
+  var output: ProspectusBusinessLogicOutput!
   var repositoryLocator = RepositoryLocator().securityRepository()
   
   // MARK: - Business logic
   
-  func doSomething(request: ProspectusBusinessLogic)
-  {
-    // NOTE: Use some repository to do the work
-    
-    // repositoryLocator.doSomeWork()
-
-    // Map DTO response from repository to Domain model entity
-    // let dtoResponse = MapperModel.convertToProspectusBusinessLogic(dto: ProspectusBusinessLogicDTO)
-
-    // NOTE: Pass the result to the Presenter
-    
-    let response = ProspectusBusinessLogic()
-    output.presentSomething(response: response)
-  }
 }

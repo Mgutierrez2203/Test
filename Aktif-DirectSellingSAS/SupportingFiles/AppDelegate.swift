@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Aktif-DirectSellingSAS
 //
-//  Created by Esteban Caro on 21/11/17.
+//  Created by Mateo Gutiérrez Díaz on 21/11/17.
 //  Copyright © 2017 Mateo. All rights reserved.
 //
 

@@ -10,24 +10,24 @@
 //
 
 import UIKit
-import ModularFoundation
 
-protocol ProspectusViewControllerViewControllerInput
+protocol ProspectusViewControllerInput
 {
-  func displaySomething(viewModel: ProspectusViewController)
+    
 }
 
-protocol ProspectusViewControllerViewControllerOutput
+protocol ProspectusViewControllerOutput
 {
-  func doSomething(request: ProspectusViewController)
+    
 }
 
-class ProspectusViewControllerViewController: UIViewController, ProspectusViewControllerViewControllerInput
+class ProspectusViewController: MenuViewController, ProspectusViewControllerInput 
 {
     // MARK: - Member variables
 
-    var output: ProspectusViewControllerViewControllerOutput!
-    var router: ProspectusViewControllerRouter!
+    var token: String!
+    var output: ProspectusViewControllerOutput!
+    var router: ProspectusRouter!
     var base: BaseViewController!
 
     // MARK: - Object lifecycle
@@ -35,7 +35,7 @@ class ProspectusViewControllerViewController: UIViewController, ProspectusViewCo
     override func awakeFromNib()
     {
       super.awakeFromNib()
-      ProspectusViewControllerConfigurator.sharedInstance.configure(viewController: self)
+      ProspectusConfigurator.sharedInstance.configure(viewController: self)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -47,25 +47,8 @@ class ProspectusViewControllerViewController: UIViewController, ProspectusViewCo
     override func viewDidLoad()
     {
       super.viewDidLoad()
-      doSomethingOnLoad()
     }
     
     // MARK: - Event handling
     
-    func doSomethingOnLoad()
-    {
-      // NOTE: Ask the Interactor to do some work
-      
-      let request = ProspectusViewController()
-      output.doSomething(request: request)
-    }
-    
-    // MARK: - Display logic
-    
-    func displaySomething(viewModel: ProspectusViewController)
-    {
-      // NOTE: Display the result from the Presenter
-      
-      // nameTextField.text = viewModel.name
-    }
 }
