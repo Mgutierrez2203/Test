@@ -10,7 +10,7 @@ import Foundation
 
 private let sharedInstance = SecurityRepositoryTest()
 
-class SecurityRepositoryTest : ISecurityRepository
+class SecurityRepositoryTest //:ISecurityRepository
 {
     static let sharedInstance = SecurityRepositoryTest()
     
@@ -34,8 +34,8 @@ class SecurityRepositoryTest : ISecurityRepository
         return Static.instance
     }
     
-    func loginUser(_ user: User, completionHandler: @escaping (_ json: String?, _ error: NSError?) -> Void) {
-       completionHandler("{\"email\":\"emaildirecto@directo.com\",\"password\":\"123\",\"t\":\"tokenFake\"}", nil)
+    func loginUser(_ user: UserDTO, completionHandler: @escaping (_ json: String?, _ error: NSError?) -> Void) {
+        completionHandler("nil", nil)
         // completionHandler(DataFakes.user , nil)
     }
 }

@@ -14,8 +14,7 @@ import UIKit
 protocol LoginViewControllerInput
 {
     func showMessage(_ message: String)
-    func goToDashBoard(_ json : String?)
-}
+    func goToDashBoard(_ token : String?)}
 
 protocol LoginViewControllerOutput
 {
@@ -26,7 +25,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginViewContr
 {
     // MARK: - Member variables
     var user = User()
-    var jsonString : String?
+    var token : String?
     var output: LoginViewControllerOutput!
     var router: LoginRouter!
     var base: BaseViewController!
@@ -104,8 +103,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginViewContr
     func showMessage(_ message: String) {
         print(message)
     }
-    func goToDashBoard(_ json : String?) {
-        self.jsonString = json
+    func goToDashBoard(_ token : String?) {
         self.router.goToDashboard()
     }
     

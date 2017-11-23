@@ -20,7 +20,6 @@ class LoginRouter: LoginRouterInput
 {
     weak var viewController: LoginViewController!
     var prospectusViewController : ProspectusViewController!
-    // segueToProspectus
     // MARK: - Navigation
     
     func goToDashboard()
@@ -33,8 +32,6 @@ class LoginRouter: LoginRouterInput
     
     func passDataToNextScene(segue: UIStoryboardSegue)
     {
-        // NOTE: Teach the router which scenes it can communicate with
-        
         if segue.identifier == "segueToProspectus" {
             passDataToProspectusScene(segue: segue)
         }
@@ -42,8 +39,7 @@ class LoginRouter: LoginRouterInput
     
     func passDataToProspectusScene(segue: UIStoryboardSegue)
     {
-        // NOTE: Teach the router how to pass data to the next scene
         self.prospectusViewController = segue.destination as! ProspectusViewController
-        self.prospectusViewController.token = self.viewController.jsonString
+        self.prospectusViewController.token = self.viewController.token
     }
 }

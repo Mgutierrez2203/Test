@@ -10,5 +10,5 @@ import Foundation
 
 protocol ISecurityRepository
 {
-    func loginUser(_ user: User, completionHandler: @escaping (_ json : String?, _ error: NSError?) -> Void)
+    func loginUser(_ user: UserDTO, completionHandler: @escaping (_ json : [String:AnyObject]?, _ error: NSError?) -> Void)
 }

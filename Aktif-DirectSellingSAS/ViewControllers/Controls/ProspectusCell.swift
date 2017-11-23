@@ -7,7 +7,17 @@
 //
 
 import Foundation
+import UIKit
 
 class ProspectusCell: UITableViewCell {
     
+    // MARK: IBOutlet
+
+    
+    // MARK: - Member variables
+    
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
 }

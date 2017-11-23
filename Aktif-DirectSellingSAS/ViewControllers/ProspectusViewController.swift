@@ -18,14 +18,12 @@ protocol ProspectusViewControllerInput
 
 protocol ProspectusViewControllerOutput
 {
-    
+    func getProspectcLists(token: String?)
 }
 
-class ProspectusViewController: MenuViewController, ProspectusViewControllerInput 
+class ProspectusViewController: UIViewController, ProspectusViewControllerInput
 {
     // MARK: - Member variables
-    
-    
     var token: String!
     var output: ProspectusViewControllerOutput!
     var router: ProspectusRouter!
@@ -48,6 +46,12 @@ class ProspectusViewController: MenuViewController, ProspectusViewControllerInpu
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        getProspectcListsOnLoad()
+        
+    }
+    
+    func getProspectcListsOnLoad() {
+        self.output.getProspectcLists(token: self.token)
     }
     
     // MARK: - Event handling

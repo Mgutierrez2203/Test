@@ -13,7 +13,7 @@ import UIKit
 
 protocol ProspectusBusinessLogicInput
 {
-   
+   func getProspectcLists(token: String?)
 }
 
 protocol ProspectusBusinessLogicOutput
@@ -26,6 +26,9 @@ class ProspectusBusinessLogic: ProspectusBusinessLogicInput
   var output: ProspectusBusinessLogicOutput!
   var repositoryLocator = RepositoryLocator().securityRepository()
   
+    func getProspectcLists(token: String?) {
+        
+    }
   // MARK: - Business logic
   
 }

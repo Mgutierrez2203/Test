@@ -36,14 +36,15 @@ class SecurityRepository : ISecurityRepository {
         return Static.instance
     }
     
-    func loginUser(_ user: User, completionHandler: @escaping (_ json: String?, _ error: NSError?) -> Void) {
-        let JSONUser = Mapper().toJSON(user)
-        Alamofire.request(URLsOperationServices.login.description, method: HTTPMethod.get, parameters: JSONUser, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response: DataResponse<Any>) in
+    func loginUser(_ user: UserDTO, completionHandler: @escaping (_ json: [String:AnyObject]?, _ error: NSError?) -> Void) {
+        
+        let url = URLsOperationServices.login.description + "?email=" + user.email! + "&password=" + user.password!
+        Alamofire.request(url, method: HTTPMethod.get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response: DataResponse<Any>) in
             
-            let jsonString = NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue)
+            let jsonString = response.result.value as? [String:AnyObject]
             switch response.result {
             case .success(_):
-                completionHandler(jsonString as String?, nil)
+                completionHandler(jsonString, nil)
             case .failure(let alamoFireError):
                 if (response.response != nil && response.response?.statusCode != 0) {
                     let mensaje = NSError(domain: "error servicio", code: response.response!.statusCode, userInfo: [NSLocalizedDescriptionKey: "error servicio"])

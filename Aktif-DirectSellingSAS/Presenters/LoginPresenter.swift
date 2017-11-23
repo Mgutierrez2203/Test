@@ -14,12 +14,12 @@ import UIKit
 
 protocol LoginPresenterInput {
     func presentMessage(_ message: String)
-    func presentDashBoard(_ json: String)
+    func presentDashBoard(_ token: String)
 }
 
 protocol LoginPresenterOutput {
     func showMessage(_ message: String)
-    func goToDashBoard(_ json : String?)
+    func goToDashBoard(_ token : String?)
 }
 
 class LoginPresenter : LoginPresenterInput {
@@ -30,7 +30,7 @@ class LoginPresenter : LoginPresenterInput {
         self.output.showMessage(message)
     }
     
-    func presentDashBoard(_ json: String) {
-        self.output.goToDashBoard(json)
+    func presentDashBoard(_ token: String) {
+        self.output.goToDashBoard(token)
     }
 }

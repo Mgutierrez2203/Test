@@ -19,7 +19,7 @@ protocol LoginBusinessLogicInput
 protocol LoginBusinessLogicOutput
 {
     func presentMessage(_ message: String)
-    func presentDashBoard(_ json: String)
+    func presentDashBoard(_ token: String)
 }
 
 class LoginBusinessLogic: LoginBusinessLogicInput
@@ -30,10 +30,11 @@ class LoginBusinessLogic: LoginBusinessLogicInput
     // MARK: - Business logic
     
     func loginUser(user: User?) {
-        //let userDTO = MapperModel.convertToUserDTO(user: user!)
-        repositoryLocator.loginUser(user!) { (json, error) in
-            if (json != nil && json != "" )  {
-                self.output.presentDashBoard(json!)
+        let userDTO = MapperModel.convertToUserDTO(user: user!)
+        repositoryLocator.loginUser(userDTO) { (json, error) in
+            if (json != nil && !(json?.isEmpty)! )  {
+                let token = json!["authToken"]
+                self.output.presentDashBoard(token! as! String)
             }else {
                 let errorString = "error servicio"
                 self.output.presentMessage(errorString)

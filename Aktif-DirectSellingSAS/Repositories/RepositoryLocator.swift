@@ -40,10 +40,10 @@ public class RepositoryLocator {
     }
     
     func securityRepository() -> ISecurityRepository {
-        if (use_test_repository) {
-            return SecurityRepositoryTest.sharedInstance
-        } else {
+        //if (use_test_repository) {
+        //    return SecurityRepositoryTest.sharedInstance
+        //} else {
             return SecurityRepository.sharedInstance
-        }
+        //}
     }
 }
