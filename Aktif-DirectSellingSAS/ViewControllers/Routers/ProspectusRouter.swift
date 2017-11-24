@@ -14,13 +14,16 @@ import UIKit
 protocol ProspectusRouterInput
 {
     func goToEdit(prospectus: Prospectus)
+    func logout()
 }
 
 class ProspectusRouter: ProspectusRouterInput
 {
     weak var viewController: ProspectusViewController!
     var editViewController : EditViewController!
+    var loginViewController: LoginViewController!
     var prospectus: Prospectus?
+    var token: String?
     
     // MARK: - Navigation
     func goToEdit(prospectus: Prospectus)
@@ -29,19 +32,35 @@ class ProspectusRouter: ProspectusRouterInput
         viewController.performSegue(withIdentifier: "segueToEdit", sender: nil)
     }
     
+    func logout() {
+        self.token = nil
+        viewController.performSegue(withIdentifier: "segueLogout", sender: nil)
+    }
+    
     // MARK: - Communication
     func passDataToNextScene(segue: UIStoryboardSegue)
     {
         // NOTE: Teach the router which scenes it can communicate with
         
         if segue.identifier == "segueToEdit" {
-            passDataToSomewhereScene(segue: segue)
+            passDataToEditScene(segue: segue)
+        } else
+            if segue.identifier == "segueLogout" {
+                passDataToLogout(segue: segue)
         }
     }
     
-    func passDataToSomewhereScene(segue: UIStoryboardSegue)
+    func passDataToEditScene(segue: UIStoryboardSegue)
     {
         self.editViewController = segue.destination as! EditViewController
         self.editViewController.prospectus = self.prospectus!
+    }
+    
+    func passDataToLogout(segue: UIStoryboardSegue)
+    {
+        self.loginViewController = segue.destination as! LoginViewController
+        self.loginViewController.token = self.token
+        UserDefaults.standard.set(nil, forKey: "email")
+        UserDefaults.standard.set(nil, forKey: "password")
     }
 }

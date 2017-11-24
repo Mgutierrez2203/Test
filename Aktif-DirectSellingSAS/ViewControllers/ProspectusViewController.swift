@@ -49,11 +49,6 @@ class ProspectusViewController: UIViewController, ProspectusViewControllerInput
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        let exists: Bool = UserDefaults.standard.bool(forKey: "prospectsSaved")
-        if  exists{
-            displayProspectsList(prospects: UserDefaults.standard.object(forKey: "prospectsSaved") as! [Prospectus])
-            tableView.tableFooterView = UIView(frame: .zero)
-        }
         getProspectsListsOnLoad()
         tableView.tableFooterView = UIView(frame: .zero)
     }
@@ -75,19 +70,38 @@ class ProspectusViewController: UIViewController, ProspectusViewControllerInput
     }
     
     // MARK: - Display logic
+    func displayError(error: String) {
+        print(error)
+    }
+    
     func displayProspectsList(prospects: [Prospectus]) {
-        /*
-        let exists: Bool = UserDefaults.standard.bool(forKey: "prospectsSaved")
-        if  !exists{
-            UserDefaults.standard.set(prospects, forKey: "prospectsSaved")
-        }
- */
         self.prospects = prospects
         self.tableView.reloadData()
     }
     
-    func displayError(error: String) {
-        print(error)
+
+    /*
+    func archiveList(list : [Prospectus]) -> NSData {
+        
+        return  NSKeyedArchiver.archivedData(withRootObject: list as Array) as NSData
+    }
+    
+    func loadList(listKey: String) -> [Prospectus]? {
+        
+        if let unarchivedObject = UserDefaults.standard.object(forKey: listKey) as? Data {
+            return NSKeyedUnarchiver.unarchiveObject(with: unarchivedObject as Data) as? [TipoLista]
+        }
+        return nil
+    }
+    
+    private func saveList(list : [TipoLista]?, listKey: String) {
+        let archivedObject = archiveList(list: list!)
+        UserDefaults.standard.set(archivedObject, forKey: listKey)
+        UserDefaults.standard.synchronize()
+    */
+   
+    @IBAction func logoutButtom(_ sender: Any) {
+        self.router.logout()
     }
 }
 
@@ -109,8 +123,7 @@ extension ProspectusViewController:  UITableViewDataSource, UITableViewDelegate
     }
   
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let height: CGFloat = 203
-        return height
+        return 50
     }
 }
 

@@ -13,6 +13,7 @@ class EditViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Member variables
     var prospectus = Prospectus()
     var router: EditRouter!
+    var base: BaseViewController!
     
     // MARK: IBOutlet
     @IBOutlet weak var identificationLabel: UILabel!

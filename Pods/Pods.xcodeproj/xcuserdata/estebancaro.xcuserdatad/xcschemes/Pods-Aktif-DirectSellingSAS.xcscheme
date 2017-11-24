@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5761C1F53245C70B089AE90E9B30F070"
+               BlueprintIdentifier = "20966EFAED3C1C110725B8DB3EFE5EF8"
                BuildableName = "Pods_Aktif_DirectSellingSAS.framework"
                BlueprintName = "Pods-Aktif-DirectSellingSAS"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5761C1F53245C70B089AE90E9B30F070"
+            BlueprintIdentifier = "20966EFAED3C1C110725B8DB3EFE5EF8"
             BuildableName = "Pods_Aktif_DirectSellingSAS.framework"
             BlueprintName = "Pods-Aktif-DirectSellingSAS"
             ReferencedContainer = "container:Pods.xcodeproj">
