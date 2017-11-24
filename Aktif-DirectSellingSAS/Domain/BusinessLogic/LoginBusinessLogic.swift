@@ -36,7 +36,7 @@ class LoginBusinessLogic: LoginBusinessLogicInput
                 let token = json!["authToken"]
                 self.output.presentDashBoard(token! as! String)
             }else {
-                let errorString = "error servicio"
+                let errorString = ("Usuario o contraseña incorrectos")
                 self.output.presentMessage(errorString)
             }
         }

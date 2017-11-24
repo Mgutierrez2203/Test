@@ -47,7 +47,7 @@ class SecurityRepository : ISecurityRepository {
                 completionHandler(jsonString, nil)
             case .failure(let alamoFireError):
                 if (response.response != nil && response.response?.statusCode != 0) {
-                    let mensaje = NSError(domain: "error servicio", code: response.response!.statusCode, userInfo: [NSLocalizedDescriptionKey: "error servicio"])
+                    let mensaje = NSError(domain: "usuario o contraseña incorrectos", code: response.response!.statusCode, userInfo: [NSLocalizedDescriptionKey: "usuario o contraseña incorrectos"])
                     completionHandler(nil, mensaje)
                 } else {
                     completionHandler(nil, alamoFireError as NSError)

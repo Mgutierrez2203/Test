@@ -33,7 +33,7 @@ class ProspectusBusinessLogic: ProspectusBusinessLogicInput
                 let prospects = MapperModel.convertProspectusDTOToProspectus(prospectsDTO: prospectsDTO!)
                 self.output.presentProspectsList(prospects: prospects)
             } else {
-                let errorString = "error servicio"
+                let errorString = "no se pudo cargar el servicio"
                 self.output.presentError(error: errorString)
             }
         }

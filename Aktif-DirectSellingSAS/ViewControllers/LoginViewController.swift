@@ -10,6 +10,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 protocol LoginViewControllerInput
 {
@@ -28,7 +29,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginViewContr
     var token : String?
     var output: LoginViewControllerOutput!
     var router: LoginRouter!
-    var base: BaseViewController!
     
     // MARK: IBOutlet
     @IBOutlet weak var emailTextField: UITextField!
@@ -56,7 +56,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginViewContr
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true);
         navigationController?.navigationBar.isHidden = true
@@ -75,13 +75,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginViewContr
     
     // MARK: UI Actions
     @IBAction func loginButton(_ sender: Any) {
+        SVProgressHUD.show(withStatus: "Iniciando sesión")
         dismissKeyboard()
         validateUser(self.emailTextField.text!, password: self.passwordTextField.text!)
     }
     
     func validateUser(_ email:String!, password:String!) {
         if email.isEmpty || password.isEmpty {
-            print("Campos vacíos")
+            let alert = UIAlertController(title: "Alerta", message: "Campos vacíos", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            SVProgressHUD.dismiss()
         }
         let emailValidFormat = isValidEmail(string: email)
         if emailValidFormat {
@@ -90,9 +94,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginViewContr
             UserDefaults.standard.set(password, forKey: "password")
             self.output.loginUser(user: user)
         } else {
-            print("formato email incorrecto")
+            let alert = UIAlertController(title: "Alerta", message: "Email incorrecto", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
-    }
+            SVProgressHUD.dismiss()
+        }
     
     func isValidEmail(string: String) -> Bool {
         let emailReg = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
@@ -101,9 +108,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginViewContr
     }
     
     func showMessage(_ message: String) {
-        print(message)
+        SVProgressHUD.dismiss()
+        let alert = UIAlertController(title: "Alerta", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
+    
     func goToDashBoard(_ token : String?) {
+        SVProgressHUD.dismiss()
         self.token = token!
         self.router.goToDashboard()
     }
@@ -121,9 +133,5 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginViewContr
     
     func dismissKeyboard() {
         view.endEditing(true)
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
     }
 }

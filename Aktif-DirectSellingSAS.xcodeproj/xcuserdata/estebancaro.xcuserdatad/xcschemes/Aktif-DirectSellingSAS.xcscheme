@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "20966EFAED3C1C110725B8DB3EFE5EF8"
-               BuildableName = "Pods_Aktif_DirectSellingSAS.framework"
-               BlueprintName = "Pods-Aktif-DirectSellingSAS"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "5119B4FD1FC4865D005195C2"
+               BuildableName = "Aktif-DirectSellingSAS.app"
+               BlueprintName = "Aktif-DirectSellingSAS"
+               ReferencedContainer = "container:Aktif-DirectSellingSAS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,7 +29,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5119B5111FC4865D005195C2"
+               BuildableName = "Aktif-DirectSellingSASTests.xctest"
+               BlueprintName = "Aktif-DirectSellingSASTests"
+               ReferencedContainer = "container:Aktif-DirectSellingSAS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5119B4FD1FC4865D005195C2"
+            BuildableName = "Aktif-DirectSellingSAS.app"
+            BlueprintName = "Aktif-DirectSellingSAS"
+            ReferencedContainer = "container:Aktif-DirectSellingSAS.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -44,15 +63,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "20966EFAED3C1C110725B8DB3EFE5EF8"
-            BuildableName = "Pods_Aktif_DirectSellingSAS.framework"
-            BlueprintName = "Pods-Aktif-DirectSellingSAS"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "5119B4FD1FC4865D005195C2"
+            BuildableName = "Aktif-DirectSellingSAS.app"
+            BlueprintName = "Aktif-DirectSellingSAS"
+            ReferencedContainer = "container:Aktif-DirectSellingSAS.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -62,6 +82,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5119B4FD1FC4865D005195C2"
+            BuildableName = "Aktif-DirectSellingSAS.app"
+            BlueprintName = "Aktif-DirectSellingSAS"
+            ReferencedContainer = "container:Aktif-DirectSellingSAS.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

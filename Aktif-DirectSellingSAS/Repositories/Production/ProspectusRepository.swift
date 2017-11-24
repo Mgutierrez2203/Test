@@ -50,7 +50,7 @@ class ProspectusRepository : IProspectusRepository {
                 }
             case .failure(let alamoFireError):
                 if (response.response != nil && response.response?.statusCode != 0) {
-                    let mensaje = NSError(domain: "error servicio", code: response.response!.statusCode, userInfo: [NSLocalizedDescriptionKey: "error servicio"])
+                    let mensaje = NSError(domain: "No se pudo cargar el servicio", code: response.response!.statusCode, userInfo: [NSLocalizedDescriptionKey: "No se pudo cargar el servicio"])
                     completionHandler(nil, mensaje)
                 } else {
                     completionHandler(nil, alamoFireError as NSError)

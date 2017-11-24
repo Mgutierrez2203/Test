@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class EditViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - Member variables
     var prospectus = Prospectus()
     var router: EditRouter!
-    var base: BaseViewController!
+    var token: String!
     
     // MARK: IBOutlet
     @IBOutlet weak var identificationLabel: UILabel!
@@ -72,11 +73,12 @@ class EditViewController: UIViewController, UITextFieldDelegate {
     
     func validateFields(name: String!, lastName: String!, phone: String!){
         if name.isEmpty || lastName.isEmpty || phone.isEmpty {
-            print("Todos los campos son obligatorios")
+            let alert = UIAlertController(title: "Alerta", message: "Todos los campos son obligatorios", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
-        self.router.goToProspectusFromEdit(prospectus: prospectus)
+        self.router.goToProspectusFromEdit(prospectus: prospectus, token: token)
     }
-    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {

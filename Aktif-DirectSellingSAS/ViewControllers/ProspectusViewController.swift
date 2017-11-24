@@ -10,6 +10,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 protocol ProspectusViewControllerInput
 {
@@ -29,7 +30,6 @@ class ProspectusViewController: UIViewController, ProspectusViewControllerInput
     var prospects: [Prospectus]?
     var output: ProspectusViewControllerOutput!
     var router: ProspectusRouter!
-    var base: BaseViewController!
     
     // MARK: IBOutlet
     @IBOutlet weak var tableView: UITableView!
@@ -66,41 +66,33 @@ class ProspectusViewController: UIViewController, ProspectusViewControllerInput
     
     // MARK: - Event handling
     func getProspectsListsOnLoad() {
+        SVProgressHUD.show(withStatus: "Cargando")
         self.output.getProspectsLists(token: self.token)
     }
     
     // MARK: - Display logic
     func displayError(error: String) {
-        print(error)
+        SVProgressHUD.dismiss()
+        let alert = UIAlertController(title: "Alerta", message: error, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     func displayProspectsList(prospects: [Prospectus]) {
+        SVProgressHUD.dismiss()
         self.prospects = prospects
+       // saveUserDefaut(prospects: self.prospects!)
         self.tableView.reloadData()
     }
     
-
-    /*
-    func archiveList(list : [Prospectus]) -> NSData {
-        
-        return  NSKeyedArchiver.archivedData(withRootObject: list as Array) as NSData
+    func saveUserDefaut(prospects: [Prospectus]){
+        let prospectData = NSKeyedArchiver.archivedData(withRootObject: prospects)
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(prospectData, forKey: "prospects")
     }
-    
-    func loadList(listKey: String) -> [Prospectus]? {
-        
-        if let unarchivedObject = UserDefaults.standard.object(forKey: listKey) as? Data {
-            return NSKeyedUnarchiver.unarchiveObject(with: unarchivedObject as Data) as? [TipoLista]
-        }
-        return nil
-    }
-    
-    private func saveList(list : [TipoLista]?, listKey: String) {
-        let archivedObject = archiveList(list: list!)
-        UserDefaults.standard.set(archivedObject, forKey: listKey)
-        UserDefaults.standard.synchronize()
-    */
    
     @IBAction func logoutButtom(_ sender: Any) {
+        SVProgressHUD.show(withStatus: "Cerrando sesión")
         self.router.logout()
     }
 }
@@ -119,6 +111,7 @@ extension ProspectusViewController:  UITableViewDataSource, UITableViewDelegate
         let cell = tableView.dequeueReusableCell(withIdentifier: "prospectusCell") as! ProspectusCell
         cell.prospectus = self.prospects?[indexPath.row]
         cell.router = self.router
+        cell.token = self.token
         return cell
     }
   
